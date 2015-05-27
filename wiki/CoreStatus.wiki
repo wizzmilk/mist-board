@@ -11,7 +11,7 @@
 = Computers =
 
 || *System* || *Docs* || *Binary URL* || *Core Project* ||
-|| Acorn Archimedes || (tba) || (tba) || ||
+|| Acorn Archimedes || [CoreDocArchimedes documentation]  || (tba) || ||
 || Amiga (AGA in beta)|| [CoreDocAmiga documentation] || [http://code.google.com/p/mist-board/source/browse/#svn%2Ftrunk%2Fbin%2Fcores%2Fminimig binaries] || Minimig ||
 || Amstrad CPC || [CoreDocAmstrad documentation] || [https://code.google.com/p/mist-board/source/browse/#svn%2Ftrunk%2Fbin%2Fcores%2Famstrad binaries] || [http://www.cpcwiki.eu/index.php/FPGAmstrad FPGAmstrad] || 
 || Apple II+ || [CoreDocApple2 documentation] || [http://code.google.com/p/mist-board/source/browse/#svn%2Ftrunk%2Fbin%2Fcores%2Fappleii%2B binaries] ||  [http://www1.cs.columbia.edu/~sedwards/apple2fpga/ Apple2FPGA] ||
