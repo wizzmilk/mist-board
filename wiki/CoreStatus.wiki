@@ -41,6 +41,7 @@
 
 Single-game arcade boards
 || *System* || *Docs* || *Binary URL* ||
+|| Frogger || [CoreDocArcade documentation] || [http://code.google.com/p/mist-board/source/browse/#svn%2Ftrunk%2Fbin%2Fcores%2Farcade binaries] ||
 || Galaxian || [CoreDocArcade documentation] || [http://code.google.com/p/mist-board/source/browse/#svn%2Ftrunk%2Fbin%2Fcores%2Farcade binaries] ||
 ||Moon Patrol || [CoreDocArcade documentation] ||  [http://code.google.com/p/mist-board/source/browse/#svn%2Ftrunk%2Fbin%2Fcores%2Farcade binaries] || 
 || Pacman || [CoreDocArcade documentation] ||  [http://code.google.com/p/mist-board/source/browse/#svn%2Ftrunk%2Fbin%2Fcores%2Farcade binaries] ||
