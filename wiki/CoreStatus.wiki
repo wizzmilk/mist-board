@@ -28,7 +28,7 @@
 || *System* || *Docs* || *Binary URL* || *Core Project* ||
 || Atari 2600 || [CoreDocAtari2600 documentation]  || [http://code.google.com/p/mist-board/source/browse/#svn%2Ftrunk%2Fbin%2Fcores%2Fa2600 binaries] || [http://retromaster.wordpress.com/a2601/ A2601] ||
 || Atari 5200 || [CoreDocAtari5200 documentation] || [http://www.scrameta.net/autobuild/ binaries]|| [http://atariage.com/forums/topic/216991-5200-in-fpga/ foft's thread in AtariAge] ||
-|| Bally Astrocade || (tba)|| [https://code.google.com/p/mist-board/source/browse/trunk/bin/cores/astrocade binaries] || (tba) ||
+|| Bally Astrocade || (tba)|| [https://code.google.com/p/mist-board/source/browse/trunk/bin/cores/astrocade binaries] || http://fpgaarcade.com/?q=node/20 Arcade Replay] ||
 || Chip8|| [https://bitbucket.org/csoren/fpga-chip8/overview documentation] || [https://bitbucket.org/csoren/fpga-chip8/overview binaries] || [https://bitbucket.org/csoren/fpga-chip8/overview FPGA SuperChip] ||
 || Colecovision || [CoreDocColeco documentation] || [http://code.google.com/p/mist-board/source/browse/#svn%2Ftrunk%2Fbin%2Fcores%2Fcolecovision binaries] || [http://ws0.org/tag/colecovision/ PACE Colecovision] ||
 || Master System || [CoreDocSMS documentation] || [http://code.google.com/p/mist-board/source/browse/#svn%2Ftrunk%2Fbin%2Fcores%2Fsms binaries] || [http://fpga-hacks.blogspot.de/ Project SMS] ||
