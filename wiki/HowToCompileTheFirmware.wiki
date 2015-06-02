@@ -1,26 +1,29 @@
 #summary This pages explains how to compile the firmware
 #sidebar CoreDocTOC
 
-= Compiling on Windows =
+= Prerequisites =
+
+The firmware is written in C. Thus a matching C compiler is needed. The current firmware setup expects a matching version of the gnu compiler collection (GCC) to be installed. 
+
+== Installing GCC on Windows ==
 
 Please refer to this page:
 
 [http://ws0.org/compiling-the-minimig-core-for-the-mist-fpga-board-on-windows/ How to compile the firmware under Windows]
 
+== Installing GCC on Linux ==
 
-= Compiling on Linix =
+Installation is described in [http://retroramblings.net/?p=315 this blog posting]. A [http://mist-board.googlecode.com/svn/trunk/tools/install_arm-none-eabi-gcc.sh shell script] is available to automate the setup.
 
-== Prerequisites ==
 
-The firmware is written in C. Thus a matching C compiler is needed. The current firmware setup expects a matching version of the gnu compiler collection (GCC) to be installed as desribed in [http://retroramblings.net/?p=315 this blog posting]. A [http://mist-board.googlecode.com/svn/trunk/tools/install_arm-none-eabi-gcc.sh shell script] is available to automate the setup.
-
-== Compiling ==
+= Compiling the source code =
 
 The firmware source code is available from the [http://code.google.com/p/mist-board/source/checkout MIST svn repository].
 
 Once the compiler is installed a simple `make` in the firmware subdirectory will build the latest firmware.
 
-== Installation ==
+
+= Installing the firmware =
 
 Three files are generated during compilation:
 
