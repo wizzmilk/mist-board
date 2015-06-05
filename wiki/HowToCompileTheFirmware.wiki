@@ -7,9 +7,6 @@ The firmware is written in C. Thus a matching C compiler is needed. The current 
 
 == Installing GCC on Windows ==
 
-Please refer to this page for details:
-[http://ws0.org/compiling-the-minimig-core-for-the-mist-fpga-board-on-windows/ How to compile the firmware under Windows]
-
 Here is an easy way (but not the most efficient):
   # Download and install the latest _gcc-arm-none-eabi_ package from [http://launchpad.net/gcc-arm-embedded/+download this page]. 
   # Make sure arm-none-eabi-gcc.exe is in your path (for new cmd.exe window)
@@ -27,6 +24,9 @@ Then you are ready to compile the firmware:
   # Type "make" and enter
 
 After a few seconds you should see a freshly created firmware.upg ready for use.
+
+For more details and other examples you can refere to this page: [http://ws0.org/compiling-the-minimig-core-for-the-mist-fpga-board-on-windows/ How to compile the firmware under Windows]
+
 
 
 == Installing GCC on Linux ==
