@@ -9,7 +9,7 @@ The firmware is written in C. Thus a matching C compiler is needed. The current 
 
 Here is an easy way (but not the most efficient):
   # Download and install the latest _gcc-arm-none-eabi_ package from [http://launchpad.net/gcc-arm-embedded/+download this page]. 
-  # Make sure arm-none-eabi-gcc.exe is in your path (for new cmd.exe window)
+  # Make sure arm-none-eabi-gcc.exe is in your path (from a new cmd.exe window)
   # Download the [https://github.com/xbmc/xbmc master branch] to your PC
   # Go under \project\BuildDependencies and run _DownloadBuildDeps.bat_
   # From the same folder run _DownloadMingwBuildEnv.bat_
