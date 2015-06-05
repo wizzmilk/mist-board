@@ -7,9 +7,27 @@ The firmware is written in C. Thus a matching C compiler is needed. The current 
 
 == Installing GCC on Windows ==
 
-Please refer to this page:
-
+Please refer to this page for details:
 [http://ws0.org/compiling-the-minimig-core-for-the-mist-fpga-board-on-windows/ How to compile the firmware under Windows]
+
+Here is an easy way (but not the most efficient):
+# Download and install the latest _gcc-arm-none-eabi_ package from [http://launchpad.net/gcc-arm-embedded/+download this page]. 
+# Make sure arm-none-eabi-gcc.exe is in your path (for new cmd.exe window)
+# Download the [https://github.com/xbmc/xbmc master branch] to your PC
+# Go under \project\BuildDependencies and run _DownloadBuildDeps.bat_
+# From the same folder run _DownloadMingwBuildEnv.bat_
+# When done go under the \msys\ folder and run _msys.bat_
+
+If everything went well you will get a command prompt. Try typing these two commands. If all went well you should see the messages below:
+* make (should say "No targets specified..."
+* arm-none-eabi-gcc  (should say "arm-none-eabi-gcc.exe: fatal error..."
+
+Then you are ready to compile the firmware:
+# From the msys.bat command prompt open the MiST /firmware/ folder
+# Type "make" and enter
+
+After a few seconds you should see a freshly created firmware.upg ready for use.
+
 
 == Installing GCC on Linux ==
 
