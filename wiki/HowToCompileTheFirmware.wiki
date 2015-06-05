@@ -21,7 +21,13 @@ If everything went well you will get a command prompt. Try typing these two comm
 
 Then you are ready to compile the firmware:
   # From the msys.bat command prompt open the MiST /firmware/ folder
+  # Edit 'Makefile' to remove the Linux path for arm-none-eabi
   # Type "make" and enter
+
+For (2), if the arm-none-eabi-gcc.exe is in your path it is enough to set:
+{{{
+BASE ?= arm-none-eabi
+}}}
 
 After a few seconds you should see a freshly created *firmware.upg* ready for use.
 
