@@ -44,9 +44,8 @@ The following steps are necessary to update the MIST firmware under Windows:
    # Close the JP1 jumper 
      * on early dev boards: next to the three push buttons
      * on the series boards: next to the Atmel ARM controller
-
-*Do not confuse it with the DIP 1 switch* - on most boards the jumper has no connector and needs to be bridged with a wire.
-
+     * be careful not to confuse it with switch DIP 1 (which will have no effect)
+     * on most boards JP1 is not wired - it needs to be bridged with a wire
    # Switch the board on, wait 10 seconds and switch it off again. The SAM-BA boot loader is now installed
    # Remove the jumper and connect the board to the PC using a USB cable
      * on early dev boards: use a normal cable connected to the square USB plug next to the three push buttons
