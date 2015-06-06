@@ -8,7 +8,7 @@ The firmware is written in C. Thus a matching C compiler is needed. The current 
 == Installing GCC on Windows ==
 
 Here is an easy way (but not the most efficient):
-  # Download and install the latest _gcc-arm-none-eabi_ package from [http://launchpad.net/gcc-arm-embedded/+download this page]. 
+  # Download and install the _gcc-arm-none-eabi_ package, version 4.8, from [http://launchpad.net/gcc-arm-embedded/+download this page]. 
   # Make sure arm-none-eabi-gcc.exe is in your path (from a new cmd.exe window)
   # Download the [https://github.com/xbmc/xbmc master branch] to your PC
   # Go under \project\BuildDependencies and run _DownloadBuildDeps.bat_
