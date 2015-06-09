@@ -1,0 +1,13 @@
+# describes the options on the INI file
+
+= mist.ini =
+
+The MiST firmware has a few configuration options available.
+
+Overall the file should contain a "mist" tag at the top and have at least one blank line at the bottom:
+
+{{{
+[mist]
+scandoubler_disable=0
+<eof>
+}}}
