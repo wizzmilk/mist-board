@@ -1,6 +1,7 @@
-# describes the options on the INI file
+#summary describes the options on the INI file
+#sidebar CoreDocTOC
 
-= mist.ini =
+= Using mist.ini =
 
 The MiST firmware has a few configuration options available.
 
@@ -11,3 +12,12 @@ Overall the file should contain a "mist" tag at the top and have at least one bl
 scandoubler_disable=0
 <eof>
 }}}
+
+= Options =
+
+== scandoubler_disable ==
+
+If set to 1, some cores will disable their scandoubler to produce a 15khz video signal. This works better for upscalers and arcade displays.
+
+Support is core specific though, currently it is only used by the ST and Amiga cores.
+
