@@ -23,7 +23,7 @@ Then we must download the source for gcc and dependencies:
   * mpfr 
   * gcc
  
-You can use a tool like 7-Zip to extract the folders under the msys /home/<user>/ subfolder so they are availabe in msys.bat prompt under ~.
+You can use a tool like 7-Zip to extract the folders under the msys /home/(user)/ subfolder so they are availabe in msys.bat prompt under ~.
 
 For each one you will need to go into their forlder and:
   # create an 'arm-none-eabi' subfolder
