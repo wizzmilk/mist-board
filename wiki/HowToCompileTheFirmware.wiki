@@ -8,18 +8,47 @@ The firmware is written in C. Thus a matching C compiler is needed. The current 
 == Installing GCC on Windows ==
 
 Here is an easy way (but not the most efficient):
-  # Download and install the _gcc-arm-none-eabi_ package, version 4.8, from [http://launchpad.net/gcc-arm-embedded/+download this page]. 
-  # Make sure arm-none-eabi-gcc.exe is in your path (from a new cmd.exe window)
   # Download the [https://github.com/xbmc/xbmc master branch] to your PC
   # Go under \project\BuildDependencies and run _DownloadBuildDeps.bat_
   # From the same folder run _DownloadMingwBuildEnv.bat_
-  # When done go under the \msys\ folder and run _msys.bat_
+  # When done go under the \msys\ folder and run _msys.bat_ to check it works
 
 If everything went well you will get a command prompt. Try typing these two commands. If all went well you should see the messages below:
   * *make* (should say "No targets specified...")
-  * *arm-none-eabi-gcc*  (should say "arm-none-eabi-gcc.exe: fatal error...")
 
-Then you are ready to compile the firmware:
+Then we must download the source for gcc and dependencies:
+  * binutils
+  * gmp
+  * mcp
+  * mpfr 
+  * gcc
+ 
+You can use a tool like 7-Zip to extract the folders under the msys /home/<user>/ subfolder so they are availabe in msys.bat prompt under ~.
+
+For each one you will need to go into their forlder and:
+  # create an 'arm-none-eabi' subfolder
+  # from that folder run a ../configure command with parameters below
+
+All packages should use:
+{{{
+../configure --target=arm-none-eabi --prefix=/opt/arm-none-eabi
+}}}
+(except gmp which doesn't recognize target)
+
+After configure runs, you need to do:
+{{{
+make
+make install
+}}}
+
+For some packages you need to tell where to find dependencies, so on the configure add these flags (as needed)
+{{{
+--with-gmp=/opt/arm-none-eabi --with-mpfr=/opt/arm-none-eabi --with-mcp=/opt/arm-none-eabi
+}}}
+
+After gcc configures and compiles without errors you should be ready to compile the firmware.
+
+Steps to build the firmware:
   # From the msys.bat command prompt open the MiST /firmware/ folder
   # Edit 'Makefile' to remove the Linux path for arm-none-eabi
   # Type "make" and enter
