@@ -13,6 +13,13 @@ scandoubler_disable=0
 mouse_boot_mode=0
 }}}
 
+Comments can be added after each setting by using ; e.g.:
+
+{{{
+[mist]
+scandoubler_disable=0 ; leave at 0 if not sure
+mouse_boot_mode=0     ; leave at 0 if not sure
+}}}
 = Description =
 
 == scandoubler_disable ==
