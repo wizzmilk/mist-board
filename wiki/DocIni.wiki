@@ -10,14 +10,20 @@ Overall the file should contain a "mist" tag at the top and have at least one bl
 {{{
 [mist]
 scandoubler_disable=0
+mouse_boot_mode=0
 <eof>
 }}}
 
-= Options =
+= Description =
 
 == scandoubler_disable ==
 
 If set to 1, some cores will disable their scandoubler to produce a 15khz video signal. This works better for upscalers and arcade displays.
 
-Support is core specific though, currently it is only used by the ST and Amiga cores.
+Support is core specific; currently it is only used by the ST and Amiga cores. All other cores will ignore the setting.
+
+
+== mouse_boot_mode ==
+
+Set to 1 to revert back to an old mouse handler which may solve compatibility issues with some mice (the default handler is much more compatible with keyboard/mouse wireless devices, though).
 
