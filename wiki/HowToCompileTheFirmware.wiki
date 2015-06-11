@@ -33,7 +33,15 @@ All packages should use:
 {{{
 ../configure --target=arm-none-eabi --prefix=/opt/arm-none-eabi
 }}}
-(except gmp which doesn't recognize target)
+With some tweaks per package:
+* gmp doesn't recognize target, just use prefix
+* mcp fails saying gmp is a dll, use --enable-static --disable-shared
+* some packages need to be told where to find dependencies (see below)
+
+Some packaged need these flags (configure will stop if not provided):
+{{{
+--with-gmp=/opt/arm-none-eabi --with-mpfr=/opt/arm-none-eabi --with-mcp=/opt/arm-none-eabi
+}}}
 
 After configure runs, you need to do:
 {{{
@@ -41,12 +49,7 @@ make
 make install
 }}}
 
-For some packages you need to tell where to find dependencies, so on the configure add these flags (as needed)
-{{{
---with-gmp=/opt/arm-none-eabi --with-mpfr=/opt/arm-none-eabi --with-mcp=/opt/arm-none-eabi
-}}}
-
-After gcc configures and compiles without errors you should be ready to compile the firmware.
+Compile GCC last. After gcc configures and compiles without errors you should be ready to compile the firmware.
 
 Steps to build the firmware:
   # From the msys.bat command prompt open the MiST /firmware/ folder
