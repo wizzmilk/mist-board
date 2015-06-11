@@ -5,6 +5,7 @@
   * [TheBoard Board overview]
   * [Peripherals Peripherals]
   * [Displays List of tested displays]
+  * [DocIni Setting up an ini file]
   * [HowToInstallTheFirmware Installing firmware]
   * [Troubleshooting Troubleshooting]
   * [RomManagement Rom Management]
