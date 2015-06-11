@@ -5,13 +5,12 @@
 
 The MiST firmware has a few configuration options available, which can be set by adding  a "mist.ini" file to the root of the SD card.
 
-Overall the file should contain a "mist" tag at the top and have at least one blank line at the bottom:
+Overall the file should contain a "mist" tag at the top:
 
 {{{
 [mist]
 scandoubler_disable=0
 mouse_boot_mode=0
-<eof>
 }}}
 
 = Description =
