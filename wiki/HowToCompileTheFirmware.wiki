@@ -34,9 +34,14 @@ All packages should use:
 ../configure --target=arm-none-eabi --prefix=/opt/arm-none-eabi
 }}}
 With some tweaks per package:
-* gmp doesn't recognize target, just use prefix
-* mcp fails saying gmp is a dll, use --enable-static --disable-shared
-* some packages need to be told where to find dependencies (see below)
+  * gmp doesn't recognize target, just use prefix
+  * mcp fails saying gmp is a dll, use --enable-static --disable-shared
+  * some packages need to be told where to find dependencies (see below)
+
+For gcc use this configure string:
+{{{
+../configure --target=arm-none-eabi --prefix=/opt/arm-none-eabi --enable-languages=c --with-newlib
+}}}
 
 Some packaged need these flags (configure will stop if not provided):
 {{{
