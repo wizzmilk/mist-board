@@ -44,6 +44,13 @@ For unknwn reason small wireless USB keyboard mouse combo devices have a high pr
 
 It is currently unclear whether this is a bug in those devices or whether this is a bug in the MIST firmware.
 
+These wireless combo devices are known to work:
+
+|| *Brand* || *Description* || *Image* ||
+|| Logitech || K400 and K400r || [http://imgur.com/HqIGIjD Image] ||
+|| Rapoo    || E2000P and 8000|| [http://imgur.com/r7sbwDA image]||
+
+
 = Bluetooth USB and mice =
 
 Bluetooth devies are currently not supported.
