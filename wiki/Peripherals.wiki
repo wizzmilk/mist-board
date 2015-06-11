@@ -47,8 +47,8 @@ It is currently unclear whether this is a bug in those devices or whether this i
 These wireless combo devices are known to work:
 
 || *Brand* || *Description* || *Image* ||
-|| Logitech || K400 and K400r || [http://imgur.com/HqIGIjD Image] ||
-|| Rapoo    || E2000P and 8000|| [http://imgur.com/r7sbwDA image]||
+|| Logitech || K400 and K400r || [http://imgur.com/HqIGIjD.jpg Image] ||
+|| Rapoo    || E2000P and 8000|| [http://imgur.com/r7sbwDA.jpg image]||
 
 
 = Bluetooth USB and mice =
