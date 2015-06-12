@@ -29,8 +29,7 @@ scandoubler_disable=0 ; leave at 0 if not sure
 
 If set to 1, some cores will disable their scandoubler to produce a 15khz video signal. This works better for upscalers and arcade displays.
 
-Support is core specific; currently it is only used by the ST and Amiga cores. All other cores will ignore the setting.
-
+Support is core specific; currently it is currently used by the ST, Amiga, colecovision, vic20 and astrocade cores. All other cores will ignore the setting.
 
 == mouse_boot_mode ==
 
