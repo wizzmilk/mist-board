@@ -16,7 +16,6 @@ If everything went well you will get a command prompt. Try typing these two comm
   * *make* (should say "No targets specified...")
 
 Then we must download the source for gcc and dependencies:
-  * binutils
   * gmp
   * mcp
   * mpfr 
