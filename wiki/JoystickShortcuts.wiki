@@ -3,7 +3,7 @@
 
 = Gamepad/Joystick keyboard shortcuts =
 
-Through specific button combinations, the MiST can send some keyboard keys to a core. This is useful for some games that require a certain key to progress. 
+Pressing certain button combinations with a USB joystick or gamepad will send specific keyboard keys to a core. This is useful for certain games that require a key press to continue.
 
 Currently we support these mappings:
 
