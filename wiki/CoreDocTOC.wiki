@@ -15,6 +15,7 @@
   * [ContriButions Projects it is based on]
  * User Guides of MiST cores
   * [CoreStatus Current status]
+  * [JoystickShortcuts Joy/Keyboard Shortcuts]
   * [GettingStarted ST core / Getting Started] 
     * [HowTheAtariStCoreWorks How the core works]
     * [Midi MIDI support] 
