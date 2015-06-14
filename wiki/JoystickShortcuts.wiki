@@ -18,5 +18,12 @@ A USB gamepad or joystick can also be used to control the OSD:
 
   * *Button 1:* choose / enter menu 
   * *Button 1:* cancel / return to previous menu
-  * *Up/Down/Left/Right:" move around menu
-  * *Button 3 + Up/Down:" PageUp/PageDown 
+  * *Up/Down/Left/Right:* move around menu
+  * *Button 3 + Up/Down:* Pageup/Pagedown 
+
+= Disabling shortcuts =
+
+To disable the above joystick mappings, set the following in mist.ini:
+{{{
+joystick_disable_shortcuts=1
+}}}
