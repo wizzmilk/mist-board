@@ -17,7 +17,7 @@ Currently we support these mappings:
 A USB gamepad or joystick can also be used to control the OSD:
 
   * *Button 1:* choose / enter menu 
-  * *Button 1:* cancel / return to previous menu
+  * *Button 2:* cancel / return to previous menu
   * *Up/Down/Left/Right:* move around menu
   * *Button 3 + Up/Down:* Pageup/Pagedown 
 
