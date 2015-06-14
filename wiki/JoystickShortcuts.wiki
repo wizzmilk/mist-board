@@ -1,6 +1,5 @@
 #summary Describes keyboard commands that can be entered by joystick
-
-#sidebar CoreDocToc
+#sidebar CoreDocTOC
 
 = Gamepad/Joystick keyboard shortcuts =
 
