@@ -1,0 +1,23 @@
+#summary Describes keyboard commands that can be entered by joystick
+
+#sidebar CoreDocToc
+
+= Gamepad/Joystick keyboard shortcuts =
+
+Through specific button combinations, the MiST can send some keyboard keys to a core. This is useful for some games that require a certain key to progress. 
+
+Currently we support these mappings:
+
+  * *Buttons 4 + 1:* press Enter key
+  * *Buttons 4 + 2:* press Space bar
+  * *Buttons 4 + 3:* press F12 (opens OSD in most cores)
+
+
+= OSD joystick control = 
+
+A USB gamepad or joystick can also be used to control the OSD:
+
+  * *Button 1:* choose / enter menu 
+  * *Button 1:* cancel / return to previous menu
+  * *Up/Down/Left/Right:" move around menu
+  * *Button 3 + Up/Down:" PageUp/PageDown 
