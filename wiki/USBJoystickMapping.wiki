@@ -17,7 +17,7 @@ These are arranged into an array of 16 values:
 
 (technical note - least significant bit is on the left in this table, 0x01 = right)
 
-At time of writing, the available cores will only use the first two sets of buttons (directions, two buttons, select, start), but the rest can be used for additional functionality by being bound to keyboard shortcuts (in particular X, L, and R).
+At time of writing, the available cores will only use the first two sets of buttons (directions, two buttons, select, start), but the rest can be used for additional functionality by being bound to keyboard shortcuts (in particular X, L, and R), [http://code.google.com/p/mist-board/wiki/JoystickShortcuts as described here].
 
 = Default mapping =
 
