@@ -13,7 +13,7 @@ This virtual gamepad is similar to a SNES/PS1 gamepad with these elements:
 
 These are arranged into an array of 16 values:
 
-|| right || left || down || up || A || B || SELECT || START || X || Y || L || R || L2 || `R2` || L3 || `R3` || 
+|| right || left || down || up || `A` || `B` || `SELECT` || `START` || `X` || `Y` || `L` || `R` || `L2` || `R2` || `L3` || `R3` || 
 
 (technical note - least significant bit is on the left in this table, 0x01 = right)
 
