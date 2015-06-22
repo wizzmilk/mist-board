@@ -4,7 +4,7 @@
   * [WhatIsThis What is it?]
   * [TheBoard Board overview]
   * [Peripherals Peripherals]
-  * [USBJoystckMapping Joystick mapping]
+  * [USBJoystickMapping Joystick mapping]
   * [Displays List of tested displays]
   * [DocIni Setting up an ini file]
   * [HowToInstallTheFirmware Installing firmware]
