@@ -5,7 +5,7 @@
 
 Pressing certain button combinations with a USB joystick or gamepad will send specific keyboard keys to a core. This is useful for certain games that require a key press to continue.
 
-This mapping is made from the _virtual gamepad_ [http://code.google.com/p/mist-board/wiki/USBJoystickMapping as defined in this page].
+The keyboard commands are made from the _virtual gamepad_ [http://code.google.com/p/mist-board/wiki/USBJoystickMapping as defined in this page]. You can use mist.ini to change how hardware buttons map to the virtual gamepad, allowing to change which buttons trigger the below.
 
 Currently we support these mappings:
 
@@ -16,7 +16,7 @@ Currently we support these mappings:
 
 = OSD joystick control = 
 
-A USB controller can also be used to control the OSD:
+When keyboard shortcuts are active, a controller can also be used to control the OSD:
 
   * *A:* choose / enter menu 
   * *B:* cancel / return to previous menu
