@@ -5,21 +5,25 @@
 
 Pressing certain button combinations with a USB joystick or gamepad will send specific keyboard keys to a core. This is useful for certain games that require a key press to continue.
 
+This mapping is made from the _virtual gamepad_ [http://code.google.com/p/mist-board/wiki/USBJoystickMapping as defined in this page].
+
 Currently we support these mappings:
 
-  * *Buttons 4 + 1:* press Enter key
-  * *Buttons 4 + 2:* press Space bar
-  * *Buttons 4 + 3:* press F12 (opens OSD in most cores)
+  * *START + A:* press Enter key
+  * *START + B:* press Space bar
+  * *START + SELECT:* press F12 (opens OSD in most cores)
 
 
 = OSD joystick control = 
 
-A USB gamepad or joystick can also be used to control the OSD:
+A USB controller can also be used to control the OSD:
 
-  * *Button 1:* choose / enter menu 
-  * *Button 2:* cancel / return to previous menu
+  * *A:* choose / enter menu 
+  * *B:* cancel / return to previous menu
   * *Up/Down/Left/Right:* move around menu
-  * *Button 3 + Up/Down:* Pageup/Pagedown 
+  * *SELECT + Up/Down:* Pageup/Pagedown 
+  * *L + Up/Down:* Pageup/Pagedown 
+  * *R + Up/Down:* Pageup/Pagedown 
 
 = Disabling shortcuts =
 
