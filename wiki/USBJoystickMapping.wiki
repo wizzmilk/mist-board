@@ -11,9 +11,20 @@ This virtual gamepad is similar to a SNES/PS1 gamepad with these elements:
   * *X*, *Y*, *L*, and *R* buttons
   * *L2*, *`R2`*, *L3*, and *`R3`* buttons
 
+These are arranged into an array of 16 values:
+
+|| right || left || down || up || A || B || SELECT || START || X || Y || L || R || L2 || `R2` || L3 || `R3` || 
+
+(technical note - least significant bit is on the left in this table, 0x01 = right)
+
 At time of writing, the available cores will only use the first two sets of buttons (directions, two buttons, start and selecT), but the rest can be used for additional functionality by being bound to keyboard shortcuts (in particular X, L, and R).
 
+= Default mapping =
 
+By default all HID devices map to a gamepad with 4 directions and twelve buttons:
 
+|| Hardware || right || left || down || up || btn 1 || btn 2 || btn 3 || btn 4 || btn 5 || btn 6 || btn 7 || btn 8 || btn 9 || btn 10 || btn 11 || btn 12 || 
+|| MiST || right || left || down || up || `A` || `B` || `SELECT` || `START` || `X` || `Y` || `L` || `R` || `L2` || `R2` || `L3` || `R3` || 
+|| Hex || `0x01` || `0x02` || `0x04`  || `0x08` || `0x10` || `0x20` || `0x40` || `0x80` || `0x100` || `0x200` || `0x400` || `0x800` || `0x1000` || `0x2000` || `0x4000` || `0x8000`` || 
 
 
