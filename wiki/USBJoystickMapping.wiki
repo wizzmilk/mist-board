@@ -114,11 +114,9 @@ Which corresponds to:
 
 === Combining buttons ===
 
-A few keyboard shortcuts have been defined based on the virtual gamepad; out of these one of the most useful is START+SELECT to open the OSD. 
+A few keyboard shortcuts have been defined based on the virtual gamepad; out of these one of the most useful is START+SELECT to open the OSD. Let's assume you have a gamepad with many buttons and button 12 happens to be conveniently located to be used as a standalone OSD button. 
 
-Let's assume you have a gamepad with many buttons and button 12 happens to be conveniently located to be used as a standalone OSD button. To trigger the keyboard shortcut one needs to had both START and SELECT pressed, which means we need to assign both numbers as mapping.
-
-This is done by summing the values of START and SELECT together, `0x40` + `0x80` = `0xC0`, and assigning it to the 12th button:
+To trigger the keyboard shortcut one needs to have both START and SELECT pressed. This means we need to assign both as mapping to button 12 to trigger it. This is done by summing the values of START and SELECT together, `0x40` + `0x80` = `0xC0`, and assigning the value to the 12th USB button:
 
 {{{
 joystick_remap=0583,2060,1,2,4,8,10,20,0,0,0,0,40,80,0,0,0,C0
