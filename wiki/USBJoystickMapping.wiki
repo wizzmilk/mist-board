@@ -111,7 +111,7 @@ Which corresponds to:
 
 || *Hardware* || right || left || down || up || btn 1 || btn 2 || btn 3 || btn 4 || btn 5 || btn 6 || btn 7 || btn 8 || btn 9 || btn 10 || btn 11 || btn 12 || 
 || *MiST* || right || left || down || up || A || B || || || || || `SELECT` || `START` ||  ||  ||  ||  || 
-|| *Hex*||`0x01`||`0x02`||`0x04`||`0x08` || `0x10` || `0x10` || || || || || `0x40` || `0x80` || || || || || 
+|| *Hex*||`0x01`||`0x02`||`0x04`||`0x08` || `0x10` || `0x20` || || || || || `0x40` || `0x80` || || || || || 
 
 
 === Combining buttons ===
@@ -128,6 +128,6 @@ Which is in our mapping table:
 
 || *Hardware* || right || left || down || up || btn 1 || btn 2 || btn 3 || btn 4 || btn 5 || btn 6 || btn 7 || btn 8 || btn 9 || btn 10 || btn 11 || btn 12 || 
 || *MiST* || right || left || down || up || A || B || || || || || `SELECT` || `START` ||  ||  ||  || `SELECT + START`  || 
-|| *Hex*||`0x01`||`0x02`||`0x04`||`0x08` || `0x10` || `0x10` || || || || || `0x40` || `0x80` || || || || `0xC0` || 
+|| *Hex*||`0x01`||`0x02`||`0x04`||`0x08` || `0x10` || `0x20` || || || || || `0x40` || `0x80` || || || || `0xC0` || 
 
 Many other combinations are possible - giving you full flexibility on customizing how your HID-compatible controllers work with the MiST.
