@@ -55,7 +55,8 @@ This will result in the following mapping:
 
 <img title="OSD Menu" src="http://mist-board.googlecode.com/svn/wiki/img_docs/gamepad_.jpg" width="480px" />
 
-This provides two ways to hold the game pad for B, A buttons, and maps one extra button to "Up" for use as a jump button on several Amiga/ST games.
+This provides two ways to hold the game pad for B, A buttons, and maps one extra button to "Up" for use as a jump button on several Amiga/ST games. L and R are not used by cores, but they're used by the OSD to activate "Pageup" and "Pagedown" when pressed with up/down while going through file selection.
 
 
-The mapping is very flexible so you can experiment to find your favorite setup per gamepad. You can even remap directions to buttons (and vice-versa) if necessary. 
+The mapping is very flexible so you can experiment to find your favorite setup per gamepad, even remapping directions to buttons (and vice-versa) if you wish to do so.
+ 
