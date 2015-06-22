@@ -65,7 +65,7 @@ The mapping is very flexible so you can experiment to find your favorite setup p
 
 At the moment up to four sets of mappings are supported in the .ini (but more can be added if requested).
 
-== Base Test of HID gamepad ==
+=== Base Test of HID gamepad ===
 
 The first step is to find out if your controller is at all recognized by the MiST. For this just plug it and try using it with a game, if directions and at least one button work you can proceed. 
 
