@@ -65,6 +65,8 @@ The mapping is very flexible so you can experiment to find your favorite setup p
 
 The first step is to find out if your controller is at all recognized by the MiST. For this just plug it and try using it with a game, if directions and at least one button work you can proceed. 
 
+=== VID / PID codes ===
+
 The next step is to work out the hardware IDs that the MiST will use to apply the mapping (VID/PID). 
 For this you can plug the controller in Windows, then open the Device Manager and right click on the icon for the controller and select "Properties" (do not confuse it with "Game Controller settings"). Then go to the "Hardware" tab, select "HID-compliant game controller" then click the `Properties` button. In the windows that pops up select the "Details" tab and choose "Hardware IDs" in the drop down selection. You should have something like the below where you can read a VID and PID numbers:
 
@@ -76,9 +78,11 @@ These are used in the first part of the mapping. As an example let's assume we d
 joystick_remap=0583,2060,1,2,4,8
 }}}
 
-Finally the last step is to map hardware buttons to the MiST virtual joystick. After the VID, PID, and four directions, each entry on the mapping string direclty maps to the button number as displayed by Windows. 
+=== USB Buttons ===
 
-Go back to the Device Manager but select "Game Controller settings" this time. This brings up a menu with all your connected controllers. Choose the right one and select "Propertied" to view how Windows recongized the gamepad. In this window you can press button and the corresponding number will light up. In the example below we press the START button on the gamepad, and can see it maps to USB button number 8:
+Finally the last step is to map hardware buttons to the MiST virtual joystick. After the VID, PID, and four directions, each entry on the mapping string directly maps to the button number as displayed by Windows. 
+
+Go back to the Device Manager but select "Game Controller settings" this time. This brings up a menu with all your connected controllers. Choose the right one and select "Properties" to view how Windows recongized the gamepad. In this window you can press button and the corresponding number will light up. In the example below we press the START button on the gamepad, and can see it maps to USB button number 8:
 
 <img title="OSD Menu" src="http://mist-board.googlecode.com/svn/wiki/img_docs/gamepad_windows_buttons.jpg" width="640px" />
 
@@ -88,7 +92,7 @@ This means that in order to map the physical START button to the START of the vi
 joystick_remap=0583,2060,1,2,4,8,0,0,0,0,0,0,0,80
 }}}
 
-The string above will map the four direction, then skip 7 buttons, and assign the 'virtual' START button to the eight USB button. Subsequent buttons are ignored unless more values are added at the right:
+The string above will map the four directions, then skip 7 buttons, and assign the 'virtual' START button to the eight USB button. Subsequent buttons are ignored unless more values are added at the right:
 
 || *Hardware* || right || left || down || up || btn 1 || btn 2 || btn 3 || btn 4 || btn 5 || btn 6 || btn 7 || btn 8 || btn 9 || btn 10 || btn 11 || btn 12 || 
 || *MiST* || right || left || down || up || || || || || || || || `START` ||  ||  ||  ||  || 
@@ -106,3 +110,24 @@ Which corresponds to:
 || *Hardware* || right || left || down || up || btn 1 || btn 2 || btn 3 || btn 4 || btn 5 || btn 6 || btn 7 || btn 8 || btn 9 || btn 10 || btn 11 || btn 12 || 
 || *MiST* || right || left || down || up || A || B || || || || || `SELECT` || `START` ||  ||  ||  ||  || 
 || *Hex*||`0x01`||`0x02`||`0x04`||`0x08` || `0x10` || `0x10` || || || || || `0x40` || `0x80` || || || || || 
+
+
+=== Combining buttons ===
+
+A few keyboard shortcuts have been defined based on the virtual gamepad; out of these one of the most useful is START+SELECT to open the OSD. 
+
+Let's assume you have a gamepad with many buttons and button 12 happens to be conveniently located to be used as a standalone OSD button. To trigger the keyboard shortcut one needs to had both START and SELECT pressed, which means we need to assign both numbers as mapping.
+
+This is done by summing the values of START and SELECT together, `0x40` + `0x80` = `0xC0`, and assigning it to the 12th button:
+
+{{{
+joystick_remap=0583,2060,1,2,4,8,10,20,0,0,0,0,40,80,0,0,0,C0
+}}}
+
+Which is in our mapping table:
+
+|| *Hardware* || right || left || down || up || btn 1 || btn 2 || btn 3 || btn 4 || btn 5 || btn 6 || btn 7 || btn 8 || btn 9 || btn 10 || btn 11 || btn 12 || 
+|| *MiST* || right || left || down || up || A || B || || || || || `SELECT` || `START` ||  ||  ||  || `SELECT + START`  || 
+|| *Hex*||`0x01`||`0x02`||`0x04`||`0x08` || `0x10` || `0x10` || || || || || `0x40` || `0x80` || || || || `0xC0` || 
+
+Many other combinations are possible - giving you full flexibility on customizing how your HID-compatible controllers work with the MiST.
