@@ -33,19 +33,19 @@ Custom mapping can be applied per button by configuring the corresponding value 
 
 = mist.ini mapping = 
 
-The mapping can be overidden by entering a line like the below in mist.ini, in this example the iBuffalo SNES pad:
+The mapping can be overidden by entering a line like the below in mist.ini, in this example we map the iBuffalo SNES pad:
 {{{
 joystick_remap=0583,2060,1,2,4,8,10,20,20,8,400,800,40,80
 }}}
 
 The first two numbers, 0584 and 2060 are the VID and PID hex codes that the devices report. These can be seen by plugging the USB controller in Windows and looking at hardware properties.
 
-The next four numbers are the mapping for the directional gamepad. These act like a digital gamepad, overriding any analog joystick values if pressed. The mapping used in the example above is the default:
+The next four numbers are the mapping for the directional gamepad. These act like a digital gamepad ("POV hat"), overriding any analog joystick values if pressed. The mapping used in the example above is the default:
 
 || right || left || down || up ||
 || `0x01` || `0x02` || `0x04`  || `0x08` ||
 
-After this are buttons (up to twelve) arranged in order that the devices reports them. The exact ordering can vary but it can be seen by plugging a USB devide in Windows, looking at controller properties, and pressing buttons to see which number they correspond to. 
+After this are buttons (up to twelve) arranged in order that the devices reports them. The exact ordering can vary but it can be seen by plugging a USB device in Windows, looking at controller properties, and pressing buttons to see which number they correspond to. 
 
 In the mapping string from the example above we've used these values:
 
