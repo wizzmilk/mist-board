@@ -7,11 +7,20 @@ Pressing certain button combinations with a USB joystick or gamepad will send sp
 
 The keyboard commands are made from the _virtual gamepad_ [http://code.google.com/p/mist-board/wiki/USBJoystickMapping as defined in this page]. You can use mist.ini to change how hardware buttons map to the virtual gamepad, allowing to change which buttons trigger the below.
 
-Currently we support these mappings:
+== Command mappings (START) ==
 
   * *START + A:* press Enter key
   * *START + B:* press Space bar
+  * *START + L:* press ESC key
+  * *START + R:* press F1 key
   * *START + SELECT:* press F12 (opens OSD in most cores)
+
+== Mouse emulation (SELECT) ==
+
+Keep *SELECT* pushed to emulate a mouse:
+  * *directions*: Move cursor
+  * *L*: Left click
+  * *R*: Right click
 
 
 = OSD joystick control = 
