@@ -1,0 +1,21 @@
+#summary Describes how to map the joystick
+#sidebar CoredocTOC
+
+= Overview =
+
+The MiST supports several common USB joysticks and gamepads (mostly anything with standard HID support). These come in many shapes and their buttons aren't always conveniently allocated, so to standardize how joysticks are handled the MiST features a _virtual gamepad_ that the hardware translates to. You can choose to override the mapping through use of the mist.ini file.
+
+This virtual gamepad is similar to a SNES/PS1 gamepad with these elements: 
+  * *Four directions* (right, left, down, up)
+  * *A*, *B*, *Select*, and *Start* buttons
+  * *X*, *Y*, *L*, and *R* buttons
+  * *L2*, *R2*, *L3*, and *R3* buttons
+
+At time of writing, the available cores will only use the first two sets of buttons (directions, two buttons, start and selecT), but the rest can be used for additional functionality by being bound to keyboard shortcuts (in particular X, L, and R).
+
+
+
+
+
+
+
