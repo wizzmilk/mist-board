@@ -27,7 +27,9 @@ By default all HID devices map to a gamepad with 4 directions and twelve buttons
 || MiST || right || left || down || up || `A` || `B` || `SELECT` || `START` || `X` || `Y` || `L` || `R` || `L2` || `R2` || `L3` || `R3` || 
 || Hex || `0x01` || `0x02` || `0x04`  || `0x08` || `0x10` || `0x20` || `0x40` || `0x80` || `0x100` || `0x200` || `0x400` || `0x800` || `0x1000` || `0x2000` || `0x4000` || `0x8000` || 
 
-Custom mapping can be applied per button by configuring the corresponding value to be the hexadecimal sum of the numbers above. For example if one wanted to map "btn 7" to A + B, one would enter `0x08` + `0x10` = `0x18` (if you translate the values to binary, you will notice there is one bit per button on a 16-bit array).
+Custom mapping can be applied per button by configuring the corresponding value to be the hexadecimal sum of the numbers above. For example if one wanted to map "btn 7" to A + B, one would enter `0x08` + `0x10` = `0x18`. (if you translate the values to binary, you will notice there is one bit per button on a 16-bit array, and e.g. 0xFFFF would press all buttons and directions at once).
+
+
 
 = mist.ini mapping = 
 
