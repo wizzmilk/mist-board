@@ -51,8 +51,11 @@ In the mapping string from the example above we've used these values:
 || Hex || `0x10`  || `0x20` || `0x20` || `0x08` || `0x400` || `0x800` || `0x40` || `0x80` ||
 || MiST || `A`  || `B` || `B` || `Up` || `L` || `R` || `SELECT` || `START` ||
 
-This will result on the following mapping: 
+This will result in the following mapping: 
 
 <img title="OSD Menu" src="http://mist-board.googlecode.com/svn/wiki/img_docs/gamepad_.jpg" width="480px" />
 
 This provides two ways to hold the game pad for B, A buttons, and maps one extra button to "Up" for use as a jump button on several Amiga/ST games.
+
+
+The mapping is very flexible so you can experiment to find your favorite setup per gamepad. You can even remap directions to buttons (and vice-versa) if necessary. 
