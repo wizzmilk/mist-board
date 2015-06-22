@@ -25,6 +25,26 @@ By default all HID devices map to a gamepad with 4 directions and twelve buttons
 
 || Hardware || right || left || down || up || btn 1 || btn 2 || btn 3 || btn 4 || btn 5 || btn 6 || btn 7 || btn 8 || btn 9 || btn 10 || btn 11 || btn 12 || 
 || MiST || right || left || down || up || `A` || `B` || `SELECT` || `START` || `X` || `Y` || `L` || `R` || `L2` || `R2` || `L3` || `R3` || 
-|| Hex || `0x01` || `0x02` || `0x04`  || `0x08` || `0x10` || `0x20` || `0x40` || `0x80` || `0x100` || `0x200` || `0x400` || `0x800` || `0x1000` || `0x2000` || `0x4000` || `0x8000`` || 
+|| Hex || `0x01` || `0x02` || `0x04`  || `0x08` || `0x10` || `0x20` || `0x40` || `0x80` || `0x100` || `0x200` || `0x400` || `0x800` || `0x1000` || `0x2000` || `0x4000` || `0x8000` || 
 
+Custom mapping can be applied per button by configuring the corresponding value to be the hexadecimal sum of the numbers above. For example if one wanted to map "btn 7" to A + B, one would enter `0x08` + `0x10` = `0x18` (if you translate the values to binary, you will notice there is one bit per button on a 16-bit array).
 
+= mist.ini mapping = 
+
+The mapping can be overidden by entering a line like the below in mist.ini, in this example the iBuffalo SNES pad:
+{{{
+joystick_remap=0583,2060,1,2,4,8,10,20,20,8,400,800,40,80
+}}}
+
+The first two numbers, 0584 and 2060 are the VID and PID hex codes that the devices report. These can be seen by plugging the USB controller in Windows and looking at hardware properties.
+
+The next four numbers are the mapping for the directional gamepad. These act like a digital gamepad, overriding any analog joystick values if pressed. The mapping used in the example above is the default:
+
+|| right || left || down || up ||
+|| `0x01` || `0x02` || `0x04`  || `0x08` ||
+
+Next follow buttons (up to twelve) arranged in order that the devices reports them. The ordering can vary but it can be seen by plugging a USB devide in Windows, looking at controller properties, and pressing buttons to see which number they correspond to. In the example above:
+
+|| Hardware || btn 1 || btn 2 || btn 3 || btn 4 || btn 5 || btn 6 || btn 7 || btn 8 ||
+|| Hex || `0x10`  || `0x20` || `0x20` || `0x08` || `0x400` || `0x800` || `0x40` || `0x80` ||
+|| MiST || `A`  || `B` || `B` || `Up` || `L` || `R` || `SELECT` || `START` ||
