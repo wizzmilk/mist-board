@@ -1,5 +1,5 @@
 #summary Describes how to map the joystick
-#sidebar CoredocTOC
+#sidebar CoreDocTOC
 
 = Overview =
 
