@@ -43,8 +43,16 @@ The next four numbers are the mapping for the directional gamepad. These act lik
 || right || left || down || up ||
 || `0x01` || `0x02` || `0x04`  || `0x08` ||
 
-Next follow buttons (up to twelve) arranged in order that the devices reports them. The ordering can vary but it can be seen by plugging a USB devide in Windows, looking at controller properties, and pressing buttons to see which number they correspond to. In the example above:
+After this are buttons (up to twelve) arranged in order that the devices reports them. The exact ordering can vary but it can be seen by plugging a USB devide in Windows, looking at controller properties, and pressing buttons to see which number they correspond to. 
+
+In the mapping string from the example above we've used these values:
 
 || Hardware || btn 1 || btn 2 || btn 3 || btn 4 || btn 5 || btn 6 || btn 7 || btn 8 ||
 || Hex || `0x10`  || `0x20` || `0x20` || `0x08` || `0x400` || `0x800` || `0x40` || `0x80` ||
 || MiST || `A`  || `B` || `B` || `Up` || `L` || `R` || `SELECT` || `START` ||
+
+This will result on the following mapping: 
+
+<img title="OSD Menu" src="http://mist-board.googlecode.com/svn/wiki/img_docs/gamepad_.jpg" width="480px" />
+
+This provides two ways to hold the game pad for B, A buttons, and maps one extra button to "Up" for use as a jump button on several Amiga/ST games.
