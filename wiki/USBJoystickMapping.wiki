@@ -82,7 +82,9 @@ joystick_remap=0583,2060,1,2,4,8
 
 Finally the last step is to map hardware buttons to the MiST virtual joystick. After the VID, PID, and four directions, each entry on the mapping string directly maps to the button number as displayed by Windows. 
 
-Go back to the Device Manager but select "Game Controller settings" this time. This brings up a menu with all your connected controllers. Choose the right one and select "Properties" to view how Windows recongized the gamepad. In this window you can press button and the corresponding number will light up. In the example below we press the START button on the gamepad, and can see it maps to USB button number 8:
+Go back to the Device Manager but select "Game Controller settings" this time. This brings up a menu with all your connected controllers. Choose the right one and select "Properties" to view how Windows recognized the gamepad. In this window you can press a button and the corresponding number will light up. 
+
+In the example below we press the START button on the gamepad, and can see it maps to USB button number 8:
 
 <img title="OSD Menu" src="http://mist-board.googlecode.com/svn/wiki/img_docs/gamepad_windows_buttons.jpg" width="640px" />
 
